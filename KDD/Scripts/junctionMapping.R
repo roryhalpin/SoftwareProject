@@ -4,7 +4,7 @@ library(ggplot2)
 library(dplyr)
 library(Amelia)
 
-setwd("C:/Users/sex-i/OneDrive/Documents/GitHub/SoftwareProject/KDD/Data")
+setwd("C:/Users/sex-i/OneDrive/Documents/GitHub/Project/KDD/Data")
 print(getwd())
 
 junctions <-read.csv("junctions.csv")

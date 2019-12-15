@@ -6,7 +6,7 @@ library(Amelia)
 
 print(getwd())
 
-setwd("C:/Users/sex-i/OneDrive/Documents/GitHub/SoftwareProject/KDD/Data")
+setwd("C:/Users/sex-i/OneDrive/Documents/GitHub/Project/KDD/Data")
 
 qrtr_trips <- read.csv("trips-15-mins.csv")
 
