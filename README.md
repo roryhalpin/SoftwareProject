@@ -1,2 +1,0 @@
-# SoftwareProject
-Final Year Project
