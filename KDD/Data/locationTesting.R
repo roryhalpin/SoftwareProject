@@ -26,4 +26,8 @@ df = subset(loc_sample, select = -c(Name,Description) )
 print(df)
 
 
-dataframe %>% extract(x, c("Latitude", "Longitude"), "\\(([^,]+), ([^)]+)\\)")
+df_split <- read.table(text=gsub('[()]', '', df$geometry), 
+           sep=",", col.names=c('Latitute', 'Longitude'))
+df %>% extract(geometry, c("Latitude", "Longitude"), "\\(([^,]+), ([^)]+)\\)")
+
+print(df_split)
