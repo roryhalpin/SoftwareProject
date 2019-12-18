@@ -12,7 +12,7 @@ setwd("C:/Users/sex-i/OneDrive/Documents/GitHub/Project/KDD/Data")
 
 ?register_google #sorting out API issues
 
-ggmap::register_google(key = "AIzaSyA-Nae8E-50O3n-j4n1gOCGQJKYJWRWQVk")
+ggmap::register_google(key = "")
 
 # Reading in the KML file and pushing to dataframe
 loc <-read_sf("junctions.kml")
