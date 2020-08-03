@@ -1,7 +1,7 @@
 library(tidyverse)
 library(naniar)
 
-setwd("C:/Users/sex-i/OneDrive/Documents/GitHub/Project/KDD/Data")
+setwd("C:/Users/XXXXXX/OneDrive/Documents/GitHub/Project/KDD/Data")
 read.csv("RawCarReg.csv") -> rawCarReg
 read.csv("RawCarRegUpdated.csv") -> rawCarRegUpdated # Newer data downloaded 6th July 2020
 
@@ -78,10 +78,10 @@ EU27NASReplace[is.na(EU27NASReplace)] <- 0
 EU27NASReplace
 
 # Write dataframes to a csv files
-write.csv(IRLCarRegM, "C:/Users/sex-i/OneDrive/Documents/GitHub/Project/KDD/Data/IRLCarRegM.csv", row.names = TRUE)
-write.csv(CANCarRegM, "C:/Users/sex-i/OneDrive/Documents/GitHub/Project/KDD/Data/CANCarRegM.csv", row.names = TRUE)
-write.csv(rawMonthlyData, "C:/Users/sex-i/OneDrive/Documents/GitHub/Project/KDD/Data/GlobalCarRegM.csv", row.names = TRUE)
-write.csv(rawMonthlyRemoveNAS, "C:/Users/sex-i/OneDrive/Documents/GitHub/Project/KDD/Data/TestNasRemoved.csv", row.names = TRUE)
-write.csv(EU27Data, "C:/Users/sex-i/OneDrive/Documents/GitHub/Project/KDD/Data/EU27.csv", row.names = TRUE)
-write.csv(EU27NAS, "C:/Users/sex-i/OneDrive/Documents/GitHub/Project/KDD/Data/EU27NAS.csv", row.names = TRUE)
-write.csv(EU27NASReplace, "C:/Users/sex-i/OneDrive/Documents/GitHub/Project/KDD/Data/EU27NASas0.csv", row.names = TRUE)
+write.csv(IRLCarRegM, "C:/Users/XXXXXX/OneDrive/Documents/GitHub/Project/KDD/Processed/IRLCarRegM.csv", row.names = TRUE)
+write.csv(CANCarRegM, "C:/Users/XXXXXX/OneDrive/Documents/GitHub/Project/KDD/Processed/CANCarRegM.csv", row.names = TRUE)
+write.csv(rawMonthlyData, "C:/Users/XXXXXX/OneDrive/Documents/GitHub/Project/KDD/Processed/GlobalCarRegM.csv", row.names = TRUE)
+write.csv(rawMonthlyRemoveNAS, "C:/Users/XXXXXX/OneDrive/Documents/GitHub/Project/KDD/Processed/TestNasRemoved.csv", row.names = TRUE)
+write.csv(EU27Data, "C:/Users/XXXXXX/OneDrive/Documents/GitHub/Project/KDD/Processed/EU27.csv", row.names = TRUE)
+write.csv(EU27NAS, "C:/Users/XXXXXX/OneDrive/Documents/GitHub/Project/KDD/Processed/EU27NAS.csv", row.names = TRUE)
+write.csv(EU27NASReplace, "C:/Users/XXXXXX/OneDrive/Documents/GitHub/Project/KDD/Processed/EU27NASas0.csv", row.names = TRUE)
